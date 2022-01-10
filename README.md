@@ -8,3 +8,5 @@ cd oakslab/
 npm i
 npm run start
 ~~~
+
+And then follow link http://0.0.0.0:8888 to get Swagger API document
