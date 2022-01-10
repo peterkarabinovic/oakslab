@@ -1,0 +1,20 @@
+{
+  "description": "Validation error - not completed previous step",
+  "type": "object",
+  "properties": {
+    "tag": {
+      "type": "string",
+      "enum": [
+        "prev-not-completed"
+      ]
+    },
+    "msg": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "msg",
+    "tag"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

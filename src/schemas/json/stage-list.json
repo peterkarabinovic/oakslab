@@ -1,0 +1,59 @@
+{
+  "description": "List of startup stage",
+  "type": "object",
+  "properties": {
+    "startup_id": {
+      "type": "string"
+    },
+    "stages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "number"
+          },
+          "name": {
+            "type": "string"
+          },
+          "done": {
+            "type": "boolean"
+          },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "done": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "done",
+                "id",
+                "name"
+              ]
+            }
+          }
+        },
+        "required": [
+          "done",
+          "id",
+          "name",
+          "steps"
+        ]
+      }
+    }
+  },
+  "required": [
+    "stages",
+    "startup_id"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}

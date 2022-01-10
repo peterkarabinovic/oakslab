@@ -1,0 +1,27 @@
+{
+    "stages": [
+        {
+            "name": "Foundation",
+            "steps": [
+                "Setup virtual office",
+                "Setup mission & vision",
+                "Select business name",
+                "Buy domain"
+            ]
+        },
+        {
+            "name": "Discovery",
+            "steps": [
+                "Create roadmap",
+                "Competitor analysis"
+            ]
+        },
+        {
+            "name": "Delivery",
+            "steps": [
+                "Release marketing website",
+                "Release MVP"
+            ]
+        }
+    ]
+}

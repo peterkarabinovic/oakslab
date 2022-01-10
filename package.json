@@ -1,0 +1,27 @@
+{
+  "name": "oakslab",
+  "version": "1.0.0",
+  "description": "Test task",
+  "main": "main.js",
+  "scripts": {
+    "test": "mocha --require ts-node/register --timeout 60000 --exit --recursive ./test/*.ts",
+    "build-json-schema": "ts-node ./src/schemas/json/json-schema-builder.ts",
+    "start": "ts-node ./src/main.ts"
+  },
+  "author": "Petro Karabinovych",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^3.25.3",
+    "fastify-swagger": "^4.13.0",
+    "fp-ts": "^2.11.6",
+    "immer": "^9.0.7",
+    "pino-pretty": "^7.3.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^9.0.0",
+    "mocha": "^9.1.3",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4",
+    "typescript-json-schema": "^0.52.0"
+  }
+}
